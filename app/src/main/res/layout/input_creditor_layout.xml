@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_creditor_information_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_row_number"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@drawable/round_back_text_view"
+            android:textColor="@color/whit"
+            android:gravity="center"
+            android:text="#" />
+
+        <TextView
+            android:id="@+id/tv_creditor"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:background="@drawable/round_back_edit_text"
+            android:gravity="center"
+            android:layout_marginLeft="5sp"
+            android:text="@string/criditer" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/round_back_edit_text"
+            android:gravity="center"
+            android:text="@string/balance" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="0.7"
+            android:background="@drawable/round_back_edit_text"
+            android:gravity="center"
+            android:text="@string/rate" />
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/round_back_edit_text"
+            android:gravity="center"
+            android:text="@string/payment" />
+
+        <TextView
+            android:id="@+id/tv_custom"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="0.5"
+            android:background="@drawable/round_back_edit_text"
+            android:gravity="center"
+            android:text="@string/custom" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="3sp"
+        android:background="@color/colorPrimaryDark" />
+
+</LinearLayout>

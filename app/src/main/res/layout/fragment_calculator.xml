@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whit"
+    android:orientation="vertical"
+    tools:context=".view.fragment.CalculatorFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="80dp"
+                android:text="Creditor Information"
+                android:textColor="@color/whit"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35sp"
+                android:layout_marginLeft="35sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="35sp"
+                android:background="@drawable/round_back_text_view"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="35sp"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/round_back_text_view"
+                    android:gravity="center"
+                    android:text="Balance Date"
+                    android:textColor="@color/whit"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0sp"
+                    android:layout_height="35sp"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/round_back_edit_text"
+                    android:gravity="center"
+                    android:text="Enter date"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20sp"
+                android:orientation="vertical">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="15sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10sp"
+                        android:text="Crediter Name"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:id="@+id/et_crediter_name_1"
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1.3"
+                        android:layout_marginRight="1sp"
+                        android:gravity="center"
+                        android:textAlignment="textEnd"
+                        android:background="@drawable/round_back_edit_text"
+                        android:hint="Crediter Name"
+                        android:paddingRight="10sp"
+                        android:inputType="text"
+                        android:nextFocusDown="@id/et_balance"
+                        tools:ignore="RtlCompat" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="15sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10sp"
+                        android:text="Balance"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+
+                    <EditText
+                        android:id="@+id/et_balance"
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/round_back_edit_text"
+                        android:gravity="center"
+                        android:hint="Balance"
+                        android:inputType="number"
+                        android:nextFocusDown="@id/et_rate"
+                        android:textAlignment="textEnd"
+                        tools:ignore="RtlCompat"
+                        android:paddingRight="10sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="15sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10sp"
+                        android:text="Rate"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:id="@+id/et_rate"
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/round_back_edit_text"
+                        android:gravity="center"
+                        android:hint="Rate"
+                        android:inputType="number"
+                        android:nextFocusDown="@id/et_paymenet"
+                        android:textAlignment="textEnd"
+                        android:paddingRight="10sp"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="15sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10sp"
+                        android:text="Payment"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+
+                    <EditText
+                        android:id="@+id/et_paymenet"
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_marginRight="1sp"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/round_back_edit_text"
+                        android:gravity="center"
+                        android:hint="Payment"
+                        android:inputType="number"
+                        android:nextFocusDown="@id/et_custom"
+                        android:textAlignment="textEnd"
+                        android:paddingRight="10sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginRight="15sp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10sp"
+                        android:text="Custom"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <EditText
+                        android:id="@+id/et_custom"
+                        android:layout_width="0sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/round_back_edit_text"
+                        android:gravity="center"
+                        android:hint="Custom"
+                        android:inputType="number"
+                        android:nextFocusDown="@id/tv_save"
+                        android:textAlignment="textEnd"
+                        android:paddingRight="10sp"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="35sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginTop="50sp"
+                    android:background="@drawable/round_back_text_view"
+                    android:gravity="center"
+                    android:text="   Save   "
+                    android:textColor="@color/whit"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="35sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/round_back_text_view"
+                    android:gravity="center"
+                    android:text="Creditor Information Table"
+                    android:textColor="@color/whit"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+        </TableLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whit"
+    tools:context=".view.fragment.InputDataFragment">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:background="@drawable/round_back_text_view"
+        android:gravity="center_vertical"
+        android:paddingLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="80dp"
+        android:text="Creditor Information Table"
+        android:textColor="@color/whit"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="3sp"
+        android:orientation="vertical">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8sp">
+
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_width="0sp"
+                android:layout_height="@dimen/creditor_information_table_title_height"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center"
+                android:text="#"
+                android:textColor="@color/whit" />
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="@dimen/creditor_information_table_title_height"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="1.3"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center"
+                android:text="@string/criditer"
+                android:textColor="@color/whit" />
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="@dimen/creditor_information_table_title_height"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center"
+                android:text="@string/balance"
+                android:textColor="@color/whit" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="@dimen/creditor_information_table_title_height"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="0.7"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center"
+                android:text="@string/rate"
+                android:textColor="@color/whit" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="@dimen/creditor_information_table_title_height"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="0.9"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center"
+                android:text="@string/payment"
+                android:textColor="@color/whit" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="@dimen/creditor_information_table_title_height"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="0.8"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center"
+                android:text="@string/custom"
+                android:textColor="@color/whit" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_creditor_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="3sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="3sp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:background="@null"
+            android:gravity="center"
+            android:text="Total"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="0.6"
+            android:background="@null"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_total_balance"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1.5"
+            android:background="@drawable/round_back_text_view"
+            android:gravity="center"
+            android:text="000"
+            android:textColor="@color/whit" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="0.6"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/whit" />
+
+        <TextView
+            android:id="@+id/tv_total_payment"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1.5"
+            android:background="@drawable/round_back_text_view"
+            android:gravity="center"
+            android:text="@string/payment"
+            android:textColor="@color/whit" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="0.6"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@color/whit" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/round_back_text_view"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="Monthly Payment"
+                android:textColor="@color/whit"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_monthly_payment"
+                android:layout_width="0sp"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_back_edit_text"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:hint="000"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:textAlignment="gravity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/round_back_text_view"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_back_text_view"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="Initial Snowball"
+                android:textColor="@color/whit"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_initial_snowball"
+                android:layout_width="0sp"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:background="@drawable/round_back_edit_text"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:textAlignment="gravity" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_out_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/round_back_text_view"
+            android:gravity="center"
+            android:text="Creditor Result Table"
+            android:textColor="@color/whit"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+
+    </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

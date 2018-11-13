@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/creditor_add_et_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20sp"
+            android:text="Creditor Information"
+            android:textColor="@color/whit"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_creditor_cross"
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/cross" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/creditor_add_et_height"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="@drawable/round_back_text_view"
+                    android:gravity="center"
+                    android:text="Enter date"
+                    android:textColor="@color/whit"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/et_crediter_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/creditor_add_et_height"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/round_back_edit_text"
+                    android:gravity="center_vertical"
+                    android:hint="Crediter Name"
+                    android:inputType="text"
+                    android:nextFocusDown="@id/et_balance"
+                    android:paddingLeft="15sp"
+                    android:textColor="@color/text_color" />
+
+
+                <EditText
+                    android:id="@+id/et_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/creditor_add_et_height"
+                    android:layout_marginTop="@dimen/creditor_add_et_margin_top"
+                    android:background="@drawable/round_back_edit_text"
+                    android:gravity="center_vertical"
+                    android:hint="Balance"
+                    android:inputType="number"
+                    android:nextFocusDown="@id/et_rate"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="10sp"
+                    android:textColor="@color/text_color" />
+
+
+                <EditText
+                    android:id="@+id/et_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/creditor_add_et_height"
+                    android:layout_marginTop="@dimen/creditor_add_et_margin_top"
+                    android:background="@drawable/round_back_edit_text"
+                    android:gravity="center_vertical"
+                    android:hint="Rate"
+                    android:inputType="number"
+                    android:nextFocusDown="@id/et_paymenet"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="10sp"
+                    android:textColor="@color/text_color"
+                    tools:ignore="RtlCompat" />
+
+
+                <EditText
+                    android:id="@+id/et_paymenet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/creditor_add_et_height"
+                    android:layout_marginTop="@dimen/creditor_add_et_margin_top"
+                    android:background="@drawable/round_back_edit_text"
+                    android:hint="Payment"
+                    android:inputType="number"
+                    android:nextFocusDown="@id/et_custom"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="10sp"
+                    android:textColor="@color/text_color" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/creditor_add_et_margin_top"
+                    android:gravity="center_vertical"
+                    android:hint="Custom"
+                    android:inputType="number"
+                    android:nextFocusDown="@id/tv_save"
+                    android:paddingLeft="15dp"
+                    app:met_floatingLabel="highlight"
+                    android:textColor="@color/text_color" />
+
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="35sp"
+                    android:layout_margin="30sp"
+                    android:background="@drawable/round_back_text_view"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textColor="@color/whit"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>
